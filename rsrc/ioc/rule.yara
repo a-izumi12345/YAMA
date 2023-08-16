@@ -32,7 +32,7 @@ rule APT10_redleaves_dropper1 {
      strings:
         $v1a = ".exe"
         $v1b = ".dll"
-        $v1c = ".doc"
+        $v1c = ".docx"
         $a2a = {E8 ?? ?? FF FF 68 ?? 08 00 00 FF}
         $d2a = {83 C2 02 88 0E 83 FA 08}
         $d2b = {83 C2 02 88 0E 83 FA 10}
@@ -49,7 +49,7 @@ rule APT10_redleaves_dropper2 {
      strings:
         $v1a = ".exe"
         $v1b = ".dll"
-        $v1c = ".doc"
+        $v1c = ".docx"
         $c2a = {B8 CD CC CC CC F7 E1 C1 EA 03}
         $c2b = {68 80 00 00 00 6A 01 6A 01 6A 01 6A 01 6A FF 50}
      condition:
